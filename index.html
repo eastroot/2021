@@ -3,8 +3,1000 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+        .header-class{
+            position:fixed;
+
+            width:95vw;
+
+        }
+        .header-text{
+            float: right;
+            background: rgba(0, 0, 0, 0.6);
+            color:white;
+            height:64px;
+            width: 775px;
+            border-radius: 2px 2px 30px 30px;
+        }
+        .header-class ul {
+            list-style: none;
+            margin:0;
+
+        }
+        .header-li{
+            font-family: 'Roboto', sans-serif;
+            margin-right: 3rem;
+            padding:1.5rem;
+            float: right;
+            border: 0;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .header-li a:link{color: white; text-decoration: none;}
+        .header-li a:visited{color: white; text-decoration: none;}
+        .header-li a:hover{color: white; text-decoration: none;}
+
+
+        .header-class ul li:hover{
+            opacity: 1;
+        }
+
+        .blank_white{
+            background: transparent;
+            width:40%;
+            height: 64px;
+        }
+
+        body{
+            overflow-x: hidden;
+
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .bar_menu_container{
+            display:grid;
+            justify-content: flex-end;
+
+        }
+        .bar_open{
+            padding:20px;
+            cursor: pointer;
+
+            margin:0;
+        }
+        .bar1,.bar2,.bar3{
+
+            width:35px;
+            height:5px;
+            background-color: gray;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+        .bar_close{
+            padding:20px;
+            padding-left: 0;
+            cursor: pointer;
+
+            margin:0;
+        }
+        .bar_close .bar1{
+            -webkit-transform: rotate(-45deg)
+            translate(-9px,6px);
+            transform:rotate(-45deg)
+            translate(-9px,6px);
+        }
+        .bar_close .bar2{
+            opacity:0;
+        }
+        .bar_close .bar3{
+            -webkit-transform: rotate(45deg)
+            translate(-8px,-8px);
+            transform:rotate(45deg)
+            translate(-8px,-8px);
+        }
+
+        .bar_menu{
+            display: grid;
+            color: gray;
+            font-size:17px;
+            list-style: none;
+            padding:0px;
+            grid-gap: 21px;
+        }
+        .bar_li{
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            color:gray;
+            opacity: 0.6;
+        }
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+            monospace;
+        }
+
+
+
+
+
+
+
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .HomepageLayout {
+            animation: fadein 1.4s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            display:grid;
+            grid-auto-columns: repeat(1,1fr);
+            height:100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:700');
+
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 75% }
+        }
+
+        @keyframes blink {
+            from,to {
+                border-color: transparent
+            }
+
+            50%{
+                border-color: white;
+            }
+        }
+
+        .typer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background:url('./img/bg.jpg') no-repeat center center/cover, rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            width:100%;
+
+
+        }
+
+        .typer-text{
+            overflow: hidden;
+            font-family: 'Noto Sans KR', sans-serif;
+            border-right: 0.1em solid white;
+            font-size: 4vw;
+            white-space: pre;
+            line-height: 1;
+            letter-spacing: 0.1rem;
+            padding-top: 0.2em;
+            animation: typing 3s steps(20, end), blink 1s step-end infinite;
+        }
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100');
+        .about_me{
+
+            display: flex;
+            justify-content:flex-start;
+            margin: 0;
+            background:white;
+            height:100%;
+            width: 100%;
+
+        }
+
+
+
+        .about_me_title{
+            margin-left: 6vw;
+            margin-right: 12vw;
+            width: 25vw;
+            box-sizing: border-box;
+            text-align: center;
+            align-self: center;
+
+        }
+        .hedding{
+            position: relative;
+            display: inline-block;
+            font-size: 2.4em;
+            font-weight:400;
+            margin:30px 0;
+        }
+        .hedding::after{
+            position: absolute;
+            content: "";
+            top:100%;
+            height:2px;
+            width: 50px;
+            left: 0;
+            right: 0;
+            margin:0 auto;
+            background:rgb(123, 124, 212);
+        }
+
+        .about_me_content{
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+            box-sizing: border-box;
+            padding: 1rem;
+            margin-right:8vw;
+            width: 100%;
+        }
+        @media (max-width: 576px) {
+            .about_me{
+                display:inherit;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+            }
+            .about_me_title{
+                display: inline-block;
+                text-align: center;
+                margin:0 auto;
+            }
+            .about_me_content{
+                display: inline-block;
+                margin-top: 0px;
+                width:100%;
+            }
+        }
+
+
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100');
+        .Skill{
+            height: 100%;
+            width: 100%;
+            margin:0 auto;
+            text-align: center;
+            padding-bottom:5rem;
+            background: rgb(231, 230, 230);
+
+        }
+        .Skill_Heeding{
+            font-family: 'Noto Sans KR', sans-serif;
+            position: relative;
+            display: inline-block;
+            font-size: 2.4em;
+            font-weight:400;
+            margin:30px 0;
+
+        }
+        .Skill_Heeding::after{
+            position: absolute;
+            content: "";
+            top:100%;
+            height:2px;
+            width: 30px;
+            left: 0;
+            right: 70%;
+            margin:0 auto;
+            background:rgb(253, 198, 198);
+        }
+        .Skill_image_container{
+            text-align: center;
+            display: inline-block;
+            width:114px;
+            height:116px;
+            border-radius: 30px 30px;
+
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin-right: 2rem;
+
+            box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+        }
+        .Skill_label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:black;
+            border-radius: 30px 30px;
+            width: 100px;
+            height:100px;
+            padding:10px;
+            opacity: 0.8;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: white;
+            visibility: hidden;
+        }
+
+        .Skill_image_container:hover .Skill_label{
+            visibility:visible;
+            animation: fadeout1 0.5s;
+            -moz-animation: fadeout1 0.5s; /* Firefox */
+            -webkit-animation: fadeout1 0.5s; /* Safari and Chrome */
+            -o-animation:fadeout1 0.5s; /* Opera */
+
+        }@keyframes fadeout1 {
+             0%{
+                 opacity: 0;
+             }
+
+             100% {
+                 opacity:0.8;
+             }
+         }
+        @-moz-keyframes fadeout1 { /* Firefox */
+            0%{
+                opacity: 0;
+            }
+
+            100% {
+                opacity:0.8;
+            }
+        }
+        @-webkit-keyframes fadeout1 { /* Safari and Chrome */
+            0%{
+                opacity: 0;
+            }
+
+            100% {
+                opacity:0.8;
+            }
+        }
+        @-o-keyframes fadeout1 { /* Opera */
+            0%{
+                opacity: 0;
+            }
+
+            100% {
+                opacity:0.8;
+            }
+        }
+
+        @media (max-width: 576px){
+            .Skill_image_container{
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+            }
+            .Skill_label{
+                width: 84px;
+                height: 84px;
+            }
+        }
+
+
+
+
+
+
+
+
+        .Project{
+            background:#25303b;
+            border-top: 2px solid #25303b;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 5rem;
+        }
+        .Project_title{
+            text-align: center;
+            color: white;
+            margin-bottom: 3em;
+        }
+        .Project_hedding{
+            position: relative;
+            display: inline-block;
+            font-size: 2.4em;
+            font-weight:400;
+            margin:30px 0;
+        }
+        .Project_hedding::after{
+            position: absolute;
+            content: "";
+            top:100%;
+            height:2px;
+            width: 50px;
+            left: 50%;
+            right: 0;
+            margin:0 auto;
+            background:rgb(248,140,101);
+        }
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:500');
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400');
+        @import url('https://fonts.googleapis.com/css?family=Gothic+A1:200');
+        .Row{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .Box{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            max-width: 50vw;
+            border-radius: 4px;
+            margin:0 auto 30px;
+            background: #ffffff;
+            box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+        }
+        .Box_image{
+            width:  50%;
+
+        }
+        .image{
+            width: 100%;
+            height:100%;
+        }
+        .Box_info{
+            font-family: 'Gothic A1', sans-serif;
+            padding:14px;
+            margin-left: 2rem;
+        }
+
+        .Box_content{
+            font-size: 1.1em;
+        }
+
+        .company {
+            font-weight: 700;
+            font-size: 1.3em;
+        }
+
+        .name{
+            font-weight:500;
+            font-size: 1.1em;
+
+        }
+        .Box_ul{
+            list-style: none;
+            padding-left: 0;
+
+        }
+        .Box_li{
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 4px;
+        }
+        .icon_image{
+            width: 30px;
+            height:30px;
+        }
+        @media screen and (max-width: 768px){
+            .Row{
+                font-size: 10px;
+                width: 100%;
+                flex-direction: column;
+            }
+            .Box{
+                width: 100%;
+                max-width: 100%;
+                height:50%;
+                display: grid;
+            }
+            .Box_image{
+                height:59%;
+                width: 100%;
+            }
+            .image{
+                width: 100%;
+                height:240px;
+            }
+            .Box_title{
+                font-family: 'Noto Sans TC', sans-serif;
+                font-weight:500;
+                font-size:14px;
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+        .demo{ background: #25303b;
+            padding: 100px 0;}
+        .heading-title
+        {
+            margin-bottom: 100px;
+            color: #fff;
+        }
+        .main-timeline{
+            width: 100%;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .main-timeline:before{
+            content: "";
+            display: block;
+            width: 2px;
+            height: 100%;
+            background: #25303b;
+            margin: 0 0 0 -1px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+
+        .main-timeline .timeline{
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .main-timeline .timeline:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .main-timeline .timeline-content{
+            width: 45%;
+            float: left;
+            margin: 5px 0 0 0;
+            border-radius: 6px;
+        }
+
+        .main-timeline .date{
+            display: block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #25303b;
+            padding: 5px 0;
+            margin: 0 0 0 -36px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 0 7px #25303b;
+        }
+
+        .main-timeline .date span{
+            display: block;
+            text-align: center;
+        }
+
+        .main-timeline .day,
+        .main-timeline .year{
+            font-size: 10px;
+        }
+
+        .main-timeline .month{
+            font-size: 18px;
+        }
+
+        .main-timeline .title{
+            padding: 15px;
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            border-radius: 6px 6px 0 0;
+            position: relative;
+        }
+
+        .main-timeline .title:after{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 20px;
+            right: -5px;
+            transform: rotate(-45deg);
+        }
+
+        .main-timeline .description{
+            padding: 15px;
+            margin: 0;
+            font-size: 14px;
+            color: #656565;
+            background: #fff;
+            border-radius: 0 0 6px 6px;
+        }
+
+        .main-timeline .timeline:nth-child(2n+2) .timeline-content{
+            float: right;
+        }
+
+        .main-timeline .timeline:nth-child(2n+2) .title:after{
+            left: -5px;
+        }
+
+        .main-timeline .timeline:nth-child(1) .title,
+        .main-timeline .timeline:nth-child(1) .title:after{
+            background: #9f84c4;
+        }
+
+        .main-timeline .timeline:nth-child(2) .title,
+        .main-timeline .timeline:nth-child(2) .title:after{
+            background: #02a2dd;
+        }
+
+        .main-timeline .timeline:nth-child(3) .title,
+        .main-timeline .timeline:nth-child(3) .title:after{
+            background: #58b25e;
+        }
+
+        .main-timeline .timeline:nth-child(4) .title,
+        .main-timeline .timeline:nth-child(4) .title:after{
+            background: #eab715;
+        }
+
+        .main-timeline .timeline:nth-child(5) .title,
+        .main-timeline .timeline:nth-child(5) .title:after{
+            background: #808080;
+        }
+
+        @media only screen and (max-width: 990px){
+            .main-timeline{ width: 100%; }
+        }
+
+        @media only screen and (max-width: 767px){
+            .main-timeline:before,
+            .main-timeline .date{
+                left: 6%;
+            }
+            .main-timeline .timeline-content{
+                width: 85%;
+                float: right;
+            }
+            .main-timeline .title:after{
+                left: -5px;
+            }
+        }
+
+        @media only screen and (max-width: 480px){
+            .main-timeline:before,
+            .main-timeline .date{
+                left: 12%;
+            }
+            .main-timeline .timeline-content{
+                width: 75%;
+            }
+            .main-timeline .date{
+                width: 60px;
+                height: 60px;
+                margin-left: -30px;
+            }
+            .main-timeline .month{
+                font-size: 14px;
+            }
+        }@charset "utf-8";
+        /* CSS Document */
+
+        .accordion-item {
+            background-color:rgb(231, 230, 230) !important;
+        }
+
+        .Skill_label, ::after, ::before {
+            box-sizing: content-box;
+        }
+
+
+
+    </style>
 </head>
 <body>
+<div id="root">
+    <div class="HomepageLayout">
+        <div class="header-class">
+            <div>
+                <div class="header-text">
+                    <ul>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#c">Contact</a></li>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#p">Project</a></li>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#s">Skills</a></li>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#a">About</a></li>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#h">Home</a></li>
+                    </ul>
+                </div>
+                <div class="blank_white"></div>
+            </div>
+        </div>
+        <div class="typer" id="h"><h1 class="typer-text">Developer 이동근의 포트폴리오입니다</h1></div>
+        <div class="about_me" id="a">
+            <div class="about_me_title"><h1 class="hedding">About Me</h1></div>
+            <div class="about_me_content"><h1>평범함을 위한 개발자</h1>
+                <section class="about_me_section">
+                    <p>
+                    화려하고 다양한 기능보다 사용자가 원하는 웹서비스를 완벽히 구현하는, 어찌보면 당연한 것을 우선시합니다.
+                    <br>간단한 작업일지라도 오류 없이 정상적인 서비스로 사용자의 니즈를 충족하기 위해
+                    <br>견고하고 완성도 높은 로직 구현과 기능 점검을 바탕으로 완벽한 평범함을 위해 노력하는 개발자입니다.
+                    <br>잘부탁드립니다.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class="Skill" id="s">
+            <h1 class="Skill_Heeding"> Skills </h1>
+            <div class="Skill_Content">
+                <h2 class="Skill_Title">Back-End</h2>
+                <span class="Skill_Content">
+                    <div class="SKill_box">
+                        <div class="Skill_image_container" style="background-image: url('./img/php.png');">
+                            <div class="Skill_label">PHP</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/codeigniter.jpg');">
+                            <div class="Skill_label">Codeigniter</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/python.png');">
+                            <div class="Skill_label">Python</div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <br>
+            <div class="Skill_Content">
+                <h2 class="Skill_Title">Front-End</h2>
+                <span class="Skill_Content">
+                    <div class="SKill_box">
+                        <div class="Skill_image_container" style="background-image: url('./img/html.png');">
+                            <div class="Skill_label">HTML</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/css.png');">
+                            <div class="Skill_label">CSS</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/javascript.png');">
+                            <div class="Skill_label">Javascript</div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <br>
+            <div class="Skill_Content">
+                <h2 class="Skill_Title">Etc</h2>
+                <span class="Skill_Content">
+                    <div class="SKill_box">
+                        <div class="Skill_image_container" style="background-image: url('./img/oracle.png');">
+                            <div class="Skill_label">Oracle</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/mysql.png');">
+                            <div class="Skill_label">Mysql(MariaDB)</div>
+                        </div>
+                        <div class="Skill_image_container" style="background-image: url('./img/svn.png');">
+                            <div class="Skill_label">Tortoise SVN</div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="Project" id="p">
+            <header class="Project_title"><h1 class="Project_hedding">Project</h1></header>
+            <div class="container">
+                <div class="row">
+                    <!--
+                    <div class="Box">
+                        <div class="Box_image"><a href=""> <img src="" alt="smartMirror" class="image"> </a></div>
+                        <div class="Box_info">
+                            <h1 class="Box_title">ㅁㅁㅁㅁ</h1>
+                            <h2 class="name">개발기간 :2018.03.10~2018.06.09</h2>
+                            <p class="Box_content">ㅁㅁㅁㅁ</p>
+                            <ul class="Box_ul">
+                                <li class="Box_li">#JavaScript</li>
+                            </ul>
+                            <ul class="Box_ul">
+                                <li class="Box_li"><a href="" alt="github">
+                                    <img src="" alt="github" class="icon_image"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
 
-</body>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ~2020년
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                                <div class="accordion-body">
+                                    <a href="https://eastroot.github.io/2020" target="_blank">~2020년 프로젝트</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    2021년
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="main-timeline">
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                        <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">1월</span>
+                                                            <span class="year"></span>
+                                                        </span>
+                                                        <div class="card">
+                                                            <h2 class="title">회원 유료멤버십</h2>
+                                                            <img src="./img/project1.png" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">나무그림</h5>
+                                                                <p class="card-text">멤버십 결제를 통해 관리자가 설정한 유료회원등급의 혜택을 유료회원에게 적용</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                       <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">2월</span>
+                                                            <span class="year"></span>
+                                                       </span>
+                                                        <div class="card">
+                                                            <h2 class="title">유료멤버십 페이백</h2>
+                                                            <img src="./img/project2.png" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">나무그림</h5>
+                                                                <p class="card-text">관리자가 설정한 조건에 충족하는 회원에게 적립금 지급</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                       <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">3월</span>
+                                                            <span class="year"></span>
+                                                       </span>
+                                                        <div class="card">
+                                                            <h2 class="title">SMS 수신동의쿠폰</h2>
+                                                            <img src="./img/project3.png" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">지오다노</h5>
+                                                                <p class="card-text">sms 수신 동의한 회원에게 쿠폰 지급</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                        <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">8월</span>
+                                                            <span class="year"></span>
+                                                        </span>
+                                                        <div class="card">
+                                                            <h2 class="title">희망배송일 지정</h2>
+                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">건화한우다</h5>
+                                                                <p class="card-text">상품 주문 시 관리자가 지정한 배송가능날짜에 한하여 희망 배송일을 선택 후 주문 진행</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                       <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">9월</span>
+                                                            <span class="year"></span>
+                                                       </span>
+                                                        <div class="card">
+                                                            <h2 class="title">기존 페이지 개선</h2>
+                                                            <img src="./img/project3.png" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">인동에프엔</h5>
+                                                                <p class="card-text"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="Contact" id="c"><h1 class="Contact_hedding">CONTACT!</h1></div>-->
+    </div>
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script></body>
 </html>
