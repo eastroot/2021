@@ -712,6 +712,16 @@
             background: #808080;
         }
 
+        .main-timeline .timeline:nth-child(6) .title,
+        .main-timeline .timeline:nth-child(6) .title:after{
+            background: #808080;
+        }
+
+        .main-timeline .timeline:nth-child(7) .title,
+        .main-timeline .timeline:nth-child(7) .title:after{
+            background: #808080;
+        }
+
         @media only screen and (max-width: 990px){
             .main-timeline{ width: 100%; }
         }
@@ -1045,30 +1055,49 @@
                                                             <span class="month">3월</span>
                                                             <span class="year"></span>
                                                        </span>
-                                                        <div class="card">
-                                                            <h2 class="title">SMS 수신동의쿠폰</h2>
-                                                            <img src="./img/project3.png" class="card-img-top" alt="...">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">지오다노</h5>
-                                                                <p class="card-text">sms 수신 동의한 회원에게 쿠폰 지급</p>
-                                                            </div>
+                                                        <div class="card" data-bs-toggle="modal" data-bs-target="#cardModal3">
+                                                            <h2 class="title">지오다노 - SMS 수신 / App Push 동의 쿠폰</h2>
+                                                            <img src="./img/project3/1.png" class="card-img-top" alt="...">
                                                         </div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="timeline">
-                                                    <div class="timeline-content">
-                                                        <span class="date">
-                                                            <span class="day">&nbsp;</span>
-                                                            <span class="month">8월</span>
-                                                            <span class="year"></span>
-                                                        </span>
-                                                        <div class="card">
-                                                            <h2 class="title">희망배송일 지정</h2>
-                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">건화한우다</h5>
-                                                                <p class="card-text">상품 주문 시 관리자가 지정한 배송가능날짜에 한하여 희망 배송일을 선택 후 주문 진행</p>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="cardModal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                                                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="modalLabel3">SMS 수신 / App Push 동의 쿠폰</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="row text-center text-lg-start">
+                                                                            <p><b>CONTENT</b></p>
+                                                                            <p class="text-in">- 회원 로그인 시, SMS 수신 미동의 회원 대상으로 SMS 쿠폰 발급 팝업을 표시합니다.</p>
+                                                                            <p class="text-in">- 회원 가입 시, SMS 수신 동의한 회원에게 SMS 쿠폰을 발급합니다.</p>
+                                                                            <p></p>
+                                                                            <p><b>PROCESS</b></p>
+                                                                            <div class="row text-center text-lg-start">
+                                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                                    <a href="./img/project3/2.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                        <img class="img-fluid img-thumbnail" src="./img/project3/2.png" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                                    <a href="./img/project3/3.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                        <img class="img-fluid img-thumbnail" src="./img/project3/3.png" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <hr>
+                                                                        <div class="row text-center text-lg-start">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1078,19 +1107,58 @@
                                                     <div class="timeline-content">
                                                        <span class="date">
                                                             <span class="day">&nbsp;</span>
-                                                            <span class="month">9월</span>
+                                                            <span class="month">5월</span>
                                                             <span class="year"></span>
                                                        </span>
                                                         <div class="card">
-                                                            <h2 class="title">기존 페이지 개선</h2>
-                                                            <img src="./img/project3.png" class="card-img-top" alt="...">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">인동에프엔</h5>
-                                                                <p class="card-text"></p>
-                                                            </div>
+                                                            <h2 class="title">이현어패럴 - 게시판 프로모션 연동</h2>
+                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                        <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">7월</span>
+                                                            <span class="year"></span>
+                                                        </span>
+                                                        <div class="card">
+                                                            <h2 class="title">건화한우다 - 배송지 리스트 & 희망배송일 지정</h2>
+                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                        <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">9월</span>
+                                                            <span class="year"></span>
+                                                        </span>
+                                                        <div class="card">
+                                                            <h2 class="title">인동에프엔 - 쇼핑몰 고도화</h2>
+                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline">
+                                                    <div class="timeline-content">
+                                                        <span class="date">
+                                                            <span class="day">&nbsp;</span>
+                                                            <span class="month">11월</span>
+                                                            <span class="year"></span>
+                                                        </span>
+                                                        <div class="card">
+                                                            <h2 class="title">인동에프엔 - 1:1문의 페이지 개선</h2>
+                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
