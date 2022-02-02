@@ -972,7 +972,6 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1039,7 +1038,6 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1095,7 +1093,6 @@
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1103,7 +1100,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="timeline">
+                                                <div class="timeline" onclick="javascript:alert('수정 중입니다.'); return false;">
                                                     <div class="timeline-content">
                                                        <span class="date">
                                                             <span class="day">&nbsp;</span>
@@ -1112,7 +1109,7 @@
                                                        </span>
                                                         <div class="card">
                                                             <h2 class="title">이현어패럴 - 게시판 프로모션 연동</h2>
-                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                            <img src="./img/working_on.png" class="card-img-top" alt="...">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1124,14 +1121,83 @@
                                                             <span class="month">7월</span>
                                                             <span class="year"></span>
                                                         </span>
-                                                        <div class="card">
+                                                        <div class="card" data-bs-toggle="modal" data-bs-target="#cardModal5">
                                                             <h2 class="title">건화한우다 - 배송지 리스트 & 희망배송일 지정</h2>
-                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                            <img src="./img/project5/7.png" class="card-img-top" alt="...">
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="cardModal5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+                                                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="modalLabel5">배송지 리스트 & 희망배송일 지정</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="row text-center text-lg-start">
+                                                                            <p><b>CONTENT</b></p>
+                                                                            <p class="text-in">- 상품 주문 페이지 배송지 입력 시 로드 할 수 있도록 배송지 리스트를 등록하고, 주문 별 희망 배송일을 지정하는 기능입니다.</p>
+                                                                            <p class="text-in">- 마이페이지 - 배송지 관리 페이지에서 배송지 등록/수정/삭제, 기본 배송지 지정이 가능합니다.</p>
+                                                                            <p class="text-in">- 상품 주문 페이지에서 기본 배송지 선택 시 기본 배송지로 지정한 배송지 정보를 입력란에 로드합니다.</p>
+                                                                            <p class="text-in">- 관리자 페이지에서 희망 배송 일자별 선택 가능/불가(휴일)를 설정합니다.</p>
+                                                                            <p class="text-in">- 고객이 상품 주문 시, 관리자가 설정한 선택 가능 희망 배송일자 중 원하는 일자를 선택 후 주문을 진행합니다.</p>
+                                                                            <p class="text-in">- 경우에 따라 관리자는 관리자 페이지에서 등록된 주문 별 희망 배송일자를 수정 가능합니다.</p>
+                                                                            <hr>
+                                                                        </div>
+                                                                        <div class="row text-center text-lg-start">
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/1.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/1.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/2.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/2.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/3.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/3.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/4.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/4.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/5.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/5.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/6.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/6.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/7.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/7.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-6">
+                                                                                <a href="./img/project5/8.png" class="d-block mb-4 h-100" target="_blank">
+                                                                                    <img class="img-fluid img-thumbnail" src="./img/project5/8.png" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="timeline">
+                                                <div class="timeline" onclick="javascript:alert('수정 중입니다.'); return false;">
                                                     <div class="timeline-content">
                                                         <span class="date">
                                                             <span class="day">&nbsp;</span>
@@ -1140,12 +1206,12 @@
                                                         </span>
                                                         <div class="card">
                                                             <h2 class="title">인동에프엔 - 쇼핑몰 고도화</h2>
-                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                            <img src="./img/working_on.png" class="card-img-top" alt="...">
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="timeline">
+                                                <div class="timeline" onclick="javascript:alert('수정 중입니다.'); return false;">
                                                     <div class="timeline-content">
                                                         <span class="date">
                                                             <span class="day">&nbsp;</span>
@@ -1154,7 +1220,7 @@
                                                         </span>
                                                         <div class="card">
                                                             <h2 class="title">인동에프엔 - 1:1문의 페이지 개선</h2>
-                                                            <img src="./img/project4.png" class="card-img-top" alt="...">
+                                                            <img src="./img/working_on.png" class="card-img-top" alt="...">
                                                         </div>
                                                     </div>
                                                 </div>
