@@ -471,7 +471,36 @@
         }
 
 
-
+        .ETC{
+            background:#6cdab2;
+            border-top: 2px solid #6cdab2;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 5rem;
+        }
+        .ETC_title{
+            text-align: center;
+            color: white;
+            margin-bottom: 3em;
+        }
+        .ETC_hedding{
+            position: relative;
+            display: inline-block;
+            font-size: 2.4em;
+            font-weight:400;
+            margin:30px 0;
+        }
+        .ETC_hedding::after{
+            position: absolute;
+            content: "";
+            top:100%;
+            height:2px;
+            width: 50px;
+            left: 50%;
+            right: 0;
+            margin:0 auto;
+            background:rgb(248,140,101);
+        }
 
 
 
@@ -792,7 +821,7 @@
             <div>
                 <div class="header-text">
                     <ul>
-                        <li class="header-li"><a class="js-scroll-trigger" href="#c">Contact</a></li>
+                        <li class="header-li"><a class="js-scroll-trigger" href="#e">ETC</a></li>
                         <li class="header-li"><a class="js-scroll-trigger" href="#p">Project</a></li>
                         <li class="header-li"><a class="js-scroll-trigger" href="#s">Skills</a></li>
                         <li class="header-li"><a class="js-scroll-trigger" href="#a">About</a></li>
@@ -1403,7 +1432,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card col-md-4">
+                                        <div class="card col-md-4" onclick="javascript:alert('수정 중입니다.'); return false;">
                                           <img class="card-img-top" src="./img/project10/1.png" alt="Card image cap">
                                           <div class="card-body">
                                             <h5 class="card-title">메디플러스(세컨드닥터)</h5>
@@ -1435,7 +1464,27 @@
             </div>
         </div>
 
-        <!--<div class="Contact" id="c"><h1 class="Contact_hedding">CONTACT!</h1></div>-->
+        <div class="ETC" id="e">
+            <header class="ETC_title"><h1 class="ETC_hedding">ETC</h1></header>
+            <div class="Container">
+                <div class="Row">
+                    <div class="Box">
+                        <div class="">
+                            <img src="./img/selenium.png" alt="" class="image">
+                        </div>
+                        <div class="Box_info">
+                            <h1 class="company">패치 테스트 자동화</h1>
+                            <p class="Box_content">Selenium framework를 활용한 정기 패치 엔진 테스트 자동화</p>
+                            <ul class="Box_ul">
+                                <li class="Box_li">#Python</li>
+                                <li class="Box_li">#Selenium</li>
+                            </ul>
+                            <p class="name"><a href="#" onclick="javascript:alert('수정 중입니다.'); return false;" target="_blank">보기</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
